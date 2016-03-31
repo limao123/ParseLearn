@@ -1,0 +1,7 @@
+curl -X POST \
+-H "X-Parse-Application-Id: 123 \
+-H "Content-Type: application/json" \
+-d '{"score":1337,"playerName":"Sean Plott","cheatMode":false}' \
+http://localhost:1338/parse/classes/GameScore
+
+mongodb://limaofuyuanzhang:123456@ds055935.mlab.com:55935/parseserverdb

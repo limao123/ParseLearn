@@ -19,9 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [Parse initializeWithConfiguration:[ParseClientConfiguration configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
-        configuration.applicationId = @"123456";
+        configuration.applicationId = @"123";
         configuration.clientKey = @"1";
-        configuration.server = @"http://192.168.1.94:1337/parse";
+        configuration.server = @"http://localhost:1338/parse";
     }]];
     return YES;
 }

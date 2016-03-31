@@ -31,13 +31,7 @@
             NSLog(@"%@",error);
         }
     }];
-//    [PFCloud callFunctionInBackground:@"bar" withParameters:@{@"name":@"limao"} block:^(id  _Nullable object, NSError * _Nullable error) {
-//       if (error) {
-//           NSLog(@"%@",error);
-//       } else {
-//           NSLog(@"%@",object);
-//       }
-//   }];
+
     
 }
 
