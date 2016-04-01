@@ -21,7 +21,7 @@
     [Parse initializeWithConfiguration:[ParseClientConfiguration configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
         configuration.applicationId = @"123";
         configuration.clientKey = @"1";
-        configuration.server = @"http://localhost:1338/parse";
+        configuration.server = @"http://localhost:1337/parse";
     }]];
     return YES;
 }

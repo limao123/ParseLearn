@@ -1626,8 +1626,11 @@ static void PFObjectAssertValueIsKindOfValidClass(id object) {
 + (instancetype)objectWithClassName:(NSString *)className
                            objectId:(NSString *)objectId
                        completeData:(BOOL)completeData {
+    //子类化相关
     Class class = [[[self class] subclassingController] subclassForParseClassName:className] ?: [PFObject class];
+    //??
     PFObjectState *state = [class _newObjectStateWithParseClassName:className objectId:objectId isComplete:completeData];
+    
     PFObject *object = [[class alloc] initWithObjectState:state];
     if (!completeData) {
         PFConsistencyAssert(![object _hasChanges],
