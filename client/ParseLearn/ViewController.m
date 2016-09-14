@@ -17,12 +17,12 @@
 - (IBAction)add:(id)sender {
     PFObject *gameScore = [PFObject objectWithClassName:@"GameScore"];
     gameScore[@"score"] = @1337;
-    gameScore[@"playerName"] = @"礼貌";
+    gameScore[@"playerName"] = @"Sean Plott";
     gameScore[@"cheatMode"] = @NO;
     [gameScore saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (succeeded) {
             // The object has been saved.
-            NSLog(@"succeeded");
+            NSLog(@"%@",gameScore);
         } else {
             // There was a problem, check error.description
             NSLog(@"%@",error);
