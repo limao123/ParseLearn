@@ -7,18 +7,19 @@ http://localhost:1338/parse/classes/GameScore
 mongodb://limaofuyuanzhang:123456@ds055935.mlab.com:55935/parseserverdb
 
 curl -X POST \
-  -H "X-Parse-Application-Id: 123" \
+  -H "X-Parse-Application-Id: 123456¡± \
   -H "Content-Type: application/json" \
   -d '{"score":1337,"playerName":"Sean Plott","cheatMode":false}' \
-  http://parse.taoyan.ali-sh.goodrain.net:10080/parse/classes/GameScore
+  http://parse.00485b0a.ali-sh.goodrain.net:10080/parse/classes/GameScore
 
 curl -X POST \
-  -H "X-Parse-Application-Id: 123" \
+  -H "X-Parse-Application-Id: 123456¡± \
   -H "Content-Type: application/json" \
   -d '{}' \
-  http://parse.taoyan.ali-sh.goodrain.net:10080/parse/functions/hello
+  http://parse.00485b0a.ali-sh.goodrain.net:10080/parse/functions/hello
 
-curl -H "X-Parse-Application-Id: 123" \
-     -H "X-Parse-Master-Key: 123" \
+curl -X GET \
+     -H "X-Parse-Application-Id: 123456¡± \
+     -H "X-Parse-Master-Key: 123456¡± \
      -H "Content-Type: application/json" \
-     http://parse.taoyan.ali-sh.goodrain.net:10080/parse/serverInfo
+     http://parse.00485b0a.ali-sh.goodrain.net:10080/parse/serverInfo
