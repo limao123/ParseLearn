@@ -140,6 +140,7 @@
 				TargetAttributes = {
 					1B51C6461CA5194900C972D5 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = ZVBJ5UPUFX;
 					};
 				};
 			};
@@ -345,6 +346,7 @@
 			baseConfigurationReference = 78823F43E2D261D54F4B1B27 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZVBJ5UPUFX;
 				INFOPLIST_FILE = ParseLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = limao.ParseLearn;
@@ -357,6 +359,7 @@
 			baseConfigurationReference = E294DC283C7C3BA05D07CFD2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZVBJ5UPUFX;
 				INFOPLIST_FILE = ParseLearn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = limao.ParseLearn;

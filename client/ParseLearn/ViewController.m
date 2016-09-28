@@ -19,7 +19,16 @@
     gameScore[@"score"] = @1337;
     gameScore[@"playerName"] = @"Sean Plott";
     gameScore[@"cheatMode"] = @NO;
-    [gameScore saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//    [gameScore saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//        if (succeeded) {
+//            // The object has been saved.
+//            NSLog(@"%@",gameScore);
+//        } else {
+//            // There was a problem, check error.description
+//            NSLog(@"%@",error);
+//        }
+//    }];
+    [gameScore saveEventually:^(BOOL succeeded, NSError * _Nullable error) {
         if (succeeded) {
             // The object has been saved.
             NSLog(@"%@",gameScore);
@@ -28,6 +37,17 @@
             NSLog(@"%@",error);
         }
     }];
+//    [gameScore saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//        if (succeeded) {
+//            // The object has been saved.
+//            NSLog(@"%@",gameScore);
+//        } else {
+//            // There was a problem, check error.description
+//            NSLog(@"%@",error);
+//        }
+//    }];
+
+    
 }
 
 - (void)viewDidLoad {
